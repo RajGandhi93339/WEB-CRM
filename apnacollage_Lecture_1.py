@@ -1,19 +1,11 @@
 import time
 import selenium.webdriver
 
-
-option = 1
-name = "abc"
-city = "XYZ"
-age = 0
-Order = "XYZ"
-price = 00.00
-Passkey = True
-
-
-# print("Enter the name : ", input(name))
-# print("Enter the city :", input(city))
-# print("Enter the age :", input(age))
+choose = bool(input("You want new order True/False:"))
+print(type(choose))
+name = input("Enter your name : ")
+city = input("Enter your city : ")
+age = input("Enter your age : ")
 # print("U want order option : /n YES/NO : ", input(Passkey))
 # print("Calculate price :", price)
 
