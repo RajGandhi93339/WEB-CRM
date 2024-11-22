@@ -21,7 +21,7 @@ print("Your average answer is : ", (f1 + f2)/2)"""
 # WAP to input 2 int number , a and b
 # print true if is a grater than or equal to b, if not else print
 
-a = int(input("enter value a: "))
+'''a = int(input("enter value a: "))
 b = int(input("enter value b: "))
 c = a >= b
-print("a is greater then or equal to b :", c)
+print("a is greater then or equal to b :", c)'''

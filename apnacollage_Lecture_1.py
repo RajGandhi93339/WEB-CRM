@@ -1,7 +1,7 @@
 import time
 import selenium.webdriver
 
-choose = bool(input("You want new order True/False:"))
+choose = bool(input("You want new order True/False: \n"))
 print(type(choose))
 name = input("Enter your name : ")
 city = input("Enter your city : ")
@@ -63,3 +63,4 @@ a = 2
 b = 2.50
 sum = a + b
 print(sum)
+
