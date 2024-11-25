@@ -38,9 +38,10 @@ else:
 """
 # WAP to check if a number is a multiple of 7 or not.
 
-num1 = int(input("Enter number 1 : "))
+'''num1 = int(input("Enter number 1 : "))
 
 if num1 % 7 == 0:
     print("number is multiple with 7")
 else:
     print("number is not multiple with 7")
+'''
