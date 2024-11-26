@@ -15,10 +15,10 @@ b = 2
 
 Sum = a + b
 print(sum)
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
+print(a + b)  # Addition
+print(a - b)  # Substraction
+print(a * b)  # multiplication
+print(a / b)  # division
 print(a % b)  # remainder
 print(a**b)  # a^b = 5^2 = 25
 
@@ -63,4 +63,3 @@ a = 2
 b = 2.50
 sum = a + b
 print(sum)
-
