@@ -77,21 +77,34 @@ ex2 = set()
 print(type(ex1))
 print(type(ex2))
 """
-#Set methods
-'''set.add() #add an elements
-set.remove() #remove elements
-set.clear() #set empty or clear set data
-set.pop() #removes a random values'''
+# Set methods
+"""set.add()  # add an elements
+set.remove()  # remove elements
+set.clear()  # set empty or clear set data
+set.pop()  # removes a random values
+set.union(set2)  # combines both set values & return new
+set.intersection(set2)  # combines common values & return new
+"""
 
-setmethod = {1,2,3,4,5}
+"""
+setmethod = {1, 2, 3, 4, 5}
 setmethod.add(6)
 print(setmethod)
 
 setmethod.remove(5)
 print(setmethod)
 
-setmethod.clear()
-print(setmethod)
+# setmethod.clear()
+# print(setmethod)
 
-setmethod.pop(4)
-print(setmethod)
+print(setmethod.pop())
+print(setmethod.pop())
+
+set1 = {1,1,2,3}
+set2 = {"hi","raj",1,2}
+set3 = set1.union(set2)
+print(set3)
+
+set4 = set1.intersection(set2)
+print(set4)
+"""
