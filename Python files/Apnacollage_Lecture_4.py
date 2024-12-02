@@ -37,9 +37,9 @@ print(student["subjects"]["chem"])
 print(student["subjects"])"""
 
 # type cast
-"""print(list(student.keys()))"""
+"""print(list(student.keys()))
 
-"""print(student.values())  # return all values
+print(student.values())  # return all values
 
 print(student.items()) #Return tuple forms 
 
@@ -47,15 +47,51 @@ print(list(student.items())) #Return tuple forms to list
 
 print(student["name2"]) #return Error 
 print(student.get("name2")) #return None value 
-"""
+
 
 print(student["name"])
-print(student.get("name"))
+print(student.get("name"))"""
 
 # Update dictionary methods
-student.update({"City": "SURAT"})
+"""student.update({"City": "SURAT"})
 print(student)
 
 new_dic = {"State": "Gujarat", "Country": "India"}
 student.update(new_dic)
 print(student)
+"""
+# Sets in python
+"""dictionaryExample = {"no1": "1", "no2": "2", "no3": "3", "no4": "4", "no5": "5"}
+setexample = {1, 2, 3, 4, 5}
+print(type(dictionaryExample))
+print(type(setexample))"""
+
+# Set ignore duplicate values
+"""duplicatesetexample = {1, 2, 2, 3, 4, 4, 5, "hello", "world", "world"}
+print(duplicatesetexample)"""
+
+# create empty sets
+"""ex1 = {}
+ex2 = set()
+
+print(type(ex1))
+print(type(ex2))
+"""
+#Set methods
+'''set.add() #add an elements
+set.remove() #remove elements
+set.clear() #set empty or clear set data
+set.pop() #removes a random values'''
+
+setmethod = {1,2,3,4,5}
+setmethod.add(6)
+print(setmethod)
+
+setmethod.remove(5)
+print(setmethod)
+
+setmethod.clear()
+print(setmethod)
+
+setmethod.pop(4)
+print(setmethod)
