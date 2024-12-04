@@ -14,7 +14,7 @@ while j >= 1:
 
 # break and countinue
 
-'''i = 1
+"""i = 1
 while i < 5:
     print(i)
     if i == 3:
@@ -30,11 +30,11 @@ while i <= 5:
         continue
 
     print("Finish 2")
-'''
+"""
 
 # For loop
 
-'''nums = [1,2,3,4,5]
+"""nums = [1,2,3,4,5]
 
 for value in nums:
     print(value)
@@ -48,10 +48,10 @@ str = "Apnacollage"
 
 for char in str:
     print(char)
-'''
+"""
 
 # for else
-
+"""
 str = "Apnacollage"
 
 for char in str:
@@ -61,4 +61,22 @@ for char in str:
     print(char)
 else:
     print("END")
-    
+"""
+# renge
+
+# seq = range(5) #renge define
+
+"""for i in range(5): #range stop
+    print(i)
+
+for i in range(2,5): #range (start,stop)
+    print(i)
+
+for i in range(1,100,2): #range (start,stop,step)
+    print(i)
+"""
+# Pass statement
+
+"""for i in range(5): #range stop
+    pass
+"""

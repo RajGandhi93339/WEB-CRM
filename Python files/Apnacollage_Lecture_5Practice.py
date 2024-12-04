@@ -60,12 +60,12 @@ while i <= 10:
 
 i = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-'''for num in i:
+"""for num in i:
     print(num)
-'''
+"""
 # WAP print the elements of the following list using a loop:
 #  [1,4,9,16,25,36,49,64,81,100]
-i = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+"""i = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 x = 64
 for value in i:
     if value == x:
@@ -73,3 +73,49 @@ for value in i:
         break
     else:
         print(value)
+"""
+# print number from 1 to 100.
+"""i = 1
+while i <= 100:
+    print(i)
+    i += 1"""
+
+"""j = range(101)
+
+for value in j :
+    print(value)
+"""
+# print number from 100 to 1.
+
+"""i = 100
+while i >= 1:
+    print(i)
+    i -= 1
+"""
+"""for value in range(100,0,-1):
+    print(value)"""
+
+# print multiplication number of n
+
+"""n = int(input("Enter the multiplication number :"))
+for i in range(1,11):
+    print(n*i)
+"""
+# WAP to find the sum of first n numbers(using while)
+'''
+n = 5
+i = 1
+sum = 0
+while i <= n:
+    sum += i
+    i += 1
+print(sum)
+'''
+# WAP to find the factorial of first n numbers.(using for)
+
+n=5
+fact =1
+
+for i in range(1,n+1):
+    fact *= i
+print(fact)
