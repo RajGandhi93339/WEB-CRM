@@ -1,5 +1,6 @@
 # Loops in python
 # Loops are used to repeat instructions.
+#  While loop
 """i = 1
 while i <= 5:
     print(i)
@@ -13,7 +14,7 @@ while j >= 1:
 
 # break and countinue
 
-i = 1
+'''i = 1
 while i < 5:
     print(i)
     if i == 3:
@@ -25,6 +26,39 @@ i = 1
 while i <= 5:
     print(i)
     if i == 3:
+        i += 1
         continue
-    i += 1
+
     print("Finish 2")
+'''
+
+# For loop
+
+'''nums = [1,2,3,4,5]
+
+for value in nums:
+    print(value)
+
+t1 = ("Apnacollage","hi","Raaj")
+
+for data in t1:
+    print(data)
+
+str = "Apnacollage"
+
+for char in str:
+    print(char)
+'''
+
+# for else
+
+str = "Apnacollage"
+
+for char in str:
+    if(char == 'o'):
+        print("o found")
+        break
+    print(char)
+else:
+    print("END")
+    

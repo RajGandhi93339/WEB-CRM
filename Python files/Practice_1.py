@@ -13,10 +13,12 @@ clickSearchtopboxButton.click()
 # typingSelectDropdownValue.send_keys("Iphone 15")
 time.sleep(3)
 Search_box = driver.find_elements("xpath","//div//form[@class='globalnav-searchfield']")
-Search_box.send_keys('Iphone 15')
+print(type(Search_box))
+print(Search_box)
 
+Search_box.send('Iphone 15')
 dropdown_options = driver.find_elements("xpath","//a[@class='globalnav-searchresults-list-link']//span[@class='globalnav-searchresults-list-text']")
-
+print(type(dropdown_options))
 time.sleep(3)
 for index, option in enumerate(dropdown_options) :
     print(f"link present in {index+1} option : {option.get_attribute("href")}")
