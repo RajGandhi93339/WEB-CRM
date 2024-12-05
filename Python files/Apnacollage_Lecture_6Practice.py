@@ -40,7 +40,7 @@ ConvertRS(USD)
 """
 # WAF enter the number to find even or odd.
 
-'''n = 1
+"""n = 1
 def Evenodd(n):
     if n % 2 == 0:
         print("number is even")
@@ -49,4 +49,40 @@ def Evenodd(n):
 
 number = int(input("check number is Even or Odd :"))
 
-Evenodd(number)'''
+Evenodd(number)"""
+
+# recursion practice
+
+# WAP a recursive function to calculate the sum of first n natural numbers.
+"""n=5
+def calc_sum(n):
+    if(n == 0 ):
+        return 0
+    return calc_sum(n-1) + n
+
+print(calc_sum(10))
+"""
+# WAP a recursive function to print all elements in a list.
+"""
+n = [1,2,3,4,5,"Hello"]
+
+def printelements(n):
+    for items in n:
+        print(items)
+    else:
+        return 0
+
+printelements(n)
+"""
+fruits = ["apple", "banana", "litchi", "mango"]
+
+
+def print_list(list, idx=0):
+    if idx == len(list):
+        return
+    print(list[idx])
+    print_list(list, idx + 1)
+
+
+print_list(fruits)
+
