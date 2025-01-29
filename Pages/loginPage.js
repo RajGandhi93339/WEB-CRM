@@ -1,18 +1,30 @@
-exports.loginPage =
-
-    class loginPage {
-
-        constructor(page) {
-            this.page = page;
-            this.baseUrl = "https://crm.testsjit.in/#/login";
-            this.SearchUrl = "https://crm.testsjit.in/#/home/pages/user/search-diamond";
-            this.jangadUrl = "https://crm.testsjit.in/#/home/pages/user/jangad-view";
-            this.authFile = "/auth.json";
-            this.userId = "4"
-            this.password = "13$HiV@M97J"
-        }
-
+export const userId = "4"
+export const password = "13$HiV@M97J"
+export const searchUrl = "https://crm.testsjit.in/#/home/pages/user/search-diamond";
+export const jangadUrl = "https://crm.testsjit.in/#/home/pages/user/jangad-view";
+export const baseUrl = "https://crm.testsjit.in/#/login";
+export const authFile = "../auth.json";
+exports.loginPage = class loginPage {
+    constructor(page) {
+        this.page = page;
+        this.userNameLocator = "//input[@id='logemail']";
+        this.passwordLocator = "//input[@id='password']";
+        this.loginbuttonLocator = "button[type='submit']";
     }
+
+    async gotobaseUrl() {
+        await this.page.goto(baseUrl)
+    }
+
+    async loginUsers(userId, password) {
+        await this.page.locator(this.userNameLocator).fill(userId);
+        await this.page.locator(this.passwordLocator).fill(password);
+        const loginButton = await this.page.locator(this.loginbuttonLocator)
+        await loginButton.click();
+        await loginButton.click();
+    }
+}
+
 
 // Login User and Passwords
 
@@ -20,11 +32,7 @@ exports.loginPage =
 // Login page functions
 export async function userLogin(page, userId, password) {
 
-    await page.locator("//input[@id='logemail']").fill(userId);
-    await page.locator("//input[@id='password']").fill(password);
-    const loginButton = await page.locator("button[type='submit']")
-    await loginButton.click();
-    await loginButton.click();
+
 
 }
 

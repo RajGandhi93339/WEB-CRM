@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { jangadUrl } = require('../Pages/loginPage');
-const { OpenJangad, jangadNo } = require('./jangadfunctions');
+const { OpenJangad, jangadNo } = require('../Pages/jangadPages');
 
 test('openJangad', async ({ browser }) => {
     const context = await browser.newContext();
@@ -41,7 +41,6 @@ test('openJangad', async ({ browser }) => {
     await page.waitForTimeout(10000);
 })
 
-test('Release function',async({page})=>{
-
-
+test('Release function', async ({ page }) => {
+ 
 })

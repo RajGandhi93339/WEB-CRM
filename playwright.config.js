@@ -33,7 +33,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
     screenshot : 'only-on-failure',
     video :'retain-on-failure',
-    storageState : 'auth.json'
+    storageState : 'D:/Raaj_Gandhi/WEB CRM/config/auth.json'
   },
 
   /* Configure projects for major browsers */

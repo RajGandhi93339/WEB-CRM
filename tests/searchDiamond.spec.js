@@ -1,21 +1,22 @@
 const { test, expect, chromium } = require('@playwright/test');
-const { fromCarat, toCarat, fromColor, toColor, fromClarity, toClarity, fromFlour, selectLab, toFlour, stoneLocation, stoneStatus, stockStatus, partyHoldName, selectStones, businessSource, jangadNotes, selectedTerms, paymentTerms, selectedBrokers, throughSent } = require('./search data');
-const { SearchUrl } = require('../loginPage/loginPage');
+const { fromCarat, toCarat, fromColor, toColor, fromClarity, toClarity, fromFlour, toFlour, selectLab, selectStones, stoneLocation, stoneStatus, stockStatus, partyHoldName, businessSource, jangadNotes, selectedTerms, paymentTerms, selectedBrokers, throughSent } = require('../Pages/searchPage');
+const { searchUrl } = require('../Pages/loginPage');
 
 test('searchPage', async ({ browser }) => {
 
     const context = await browser.newContext();
     const page = await context.newPage();
 
-    page.goto(SearchUrl);
-    //Manage New Tab Open
+    page.goto(searchUrl);
+    /* Manage New Tab Open
     // const [newTab] = await Promise.all([
     //     context.waitForEvent('page'),// Wait for new page in context
     //     page.locator("//span[normalize-space()='Search Diamond']").click()
-    // ])
+     ])*/
+
     //Shape Selection
     await page.locator("//div[normalize-space()='RBC']").click()
-    // await page.locator("//div[normalize-space()='PEAR']").click()
+    await page.locator("//div[normalize-space()='PEAR']").click()
 
     //From Carat
     await page.locator("//input[@placeholder='From']").click()
