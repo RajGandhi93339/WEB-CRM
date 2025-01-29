@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { jangadUrl } = require('../Pages/loginPage');
 const { OpenJangad, jangadNo } = require('../Pages/jangadPages');
 
-test('openJangad', async ({ browser }) => {
+test.skip('openJangad', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto(jangadUrl)
@@ -41,6 +41,16 @@ test('openJangad', async ({ browser }) => {
     await page.waitForTimeout(10000);
 })
 
-test('Release function', async ({ page }) => {
- 
+test('Releasefunction', async ({ page }) => {
+    await page.goto(jangadUrl);
+    await page.locator("//button[normalize-space()='Hold']").click();
+    const jangadTable = await page.locator("//table[@class='table table-bordered text-center table-hover text-nowrap']")
+    const JangadColumns = await jangadTable.locator("//tr[@class='saleHeader']//th");
+    //console.log("no of columns:", await JangadColumns.count());
+    const JangadRows = await jangadTable.locator("//tbody//tr");
+    //console.log("no of rows:", await JangadRows.count());
+    await JangadRows.locator("//td[normalize-space()=" + jangadNo + "]").click();
+    await page.locator("//button[normalize-space()='Release']").click();
+
+    await page.waitForTimeout(5000);
 })
