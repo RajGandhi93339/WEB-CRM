@@ -1,4 +1,4 @@
-export const jangadNo = '194790 ';
+export const jangadNo = '194772';
 
 export async function OpenJangad(JangadRows, page, jangadNo) {
     const matchrows = await JangadRows.filter({

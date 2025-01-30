@@ -30,9 +30,9 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'retain-on-failure',
-    screenshot : 'only-on-failure',
-    video :'retain-on-failure',
+    trace: 'off',
+    screenshot : 'off',
+    video :'off',
     storageState : 'D:/Raaj_Gandhi/WEB CRM/config/auth.json'
   },
 
